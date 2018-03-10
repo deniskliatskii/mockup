@@ -1,0 +1,62 @@
+/*** Top footer ***/
+
+
+/*** Bottom footer ***/
+
+.bottom-footer {
+    background: $botomFooterColor;
+    padding: 14px 0;
+}
+
+.bottom-footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 170px;
+}
+
+
+
+.social-items {
+    width: 22px;
+    height: 22px;
+    margin-left: 25px;
+}
+
+.social-items .rss {
+    background: url(../img/icon/rss.svg) center center no-repeat;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.social-items .facebook {
+    background: url(../img/icon/facebook.svg) center center no-repeat;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.social-items .google-plus {
+    background: url(../img/icon/google-plus.svg) center center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.social-items .tweeter {
+    background: url(../img/icon/twitter.svg) center center no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.copy {
+    @include fonts($baseFont, 12px, 400, $lightsFontColor);
+}

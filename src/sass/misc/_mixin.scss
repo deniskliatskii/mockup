@@ -1,0 +1,59 @@
+
+@mixin container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+
+  @media screen and (max-width: 1400px) {
+  }
+  @media screen and (max-width: 1220px) {
+    width: 992px;
+  }
+  @media screen and (max-width: 1012px) {
+    width: 768px;
+  }
+  @media screen and (max-width: 788px) {
+    width: auto;
+  }
+  @media screen and (max-width: 596px) {
+    
+  }
+  
+}
+
+// Font Awesome paste in css
+
+@mixin fontAwesome($content, $iconSize, $color) {
+  &:before {
+    content: $content;
+    font-family: 'Font Awesome 5 Free';
+    font-size: $iconSize;
+    color: $color;
+  }
+}
+ 
+      /*
+        "selector" {
+          @include fontAwesome(code, size, color);  <== paste this code in css
+        }
+
+      */
+
+      
+// Шрифт в скобках указывать семейство шрифта, размер шрифта, начертание, цвет
+
+@mixin fonts ($fontFamily, $fontSize, $fontWeight, $fontColor ) {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $fontColor;
+    // line-height: $fontSize + 2px;
+}
+
+      /*
+        "selector" {
+          @include fonts(font-family, font-size, font-weight, color);  <== paste this code in css
+        }
+
+      */

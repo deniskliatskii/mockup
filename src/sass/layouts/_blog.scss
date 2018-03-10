@@ -1,0 +1,29 @@
+.blog-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.right-column {
+    width: 270px;
+}
+
+.blog-shifter {
+    width: 74%;
+}
+
+
+.gallery-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-item {
+    width: 70px;
+    margin: 0 30px 25px 0;
+}
+.gallery-item:nth-child(3n) {
+    margin: 0 0 25px 0;
+}

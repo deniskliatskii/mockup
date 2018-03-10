@@ -1,0 +1,122 @@
+.active-line {
+    background-color: $accentColor;
+}
+
+.left-arrow {
+    width: 50px;
+    height: 60px;
+    background-color: $accentColor;
+    position: absolute;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-bottom: 3px solid #fff;
+        border-left: 3px solid #fff;
+        transform: rotate(45deg);
+        top: 18px; 
+        left: 15px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-bottom: 3px solid #fff;
+        border-left: 3px solid #fff;
+        transform: rotate(45deg);
+        top: 18px; 
+        left: 25px;
+    }
+}
+
+.right-arrow {
+    width: 50px;
+    height: 60px;
+    background-color: $accentColor;
+    position: absolute;
+    right: 0;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-bottom: 3px solid #fff;
+        border-right: 3px solid #fff;
+        transform: rotate(-45deg);
+        top: 18px; 
+        right: 15px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-bottom: 3px solid #fff;
+        border-right: 3px solid #fff;
+        transform: rotate(-45deg);
+        top: 18px; 
+        right: 25px;
+    }
+}
+
+
+.search-btn {
+    border: none;
+    background: none;
+    @include fontAwesome("\f002", 16px, $lightsFontColor);
+    font-weight: 600;
+    cursor: pointer;
+}
+/***
+*
+* BUTTON UP
+*
+***/
+
+// .btn-up {
+//   position: fixed;
+//   bottom: -50px;
+//   right: 50px;
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 50%;
+//   background: rgba(44, 48, 57, .9);
+//   z-index: 999;
+//   cursor: pointer;
+//   outline: none;
+//   border: none;
+//   transition: .8s;
+// }
+
+//     .btn-up__active{
+//     bottom: 50px;
+//     }
+
+//     .btn-up:hover{
+//     border: 2px solid #06d56c;
+//     }
+
+//     .btn-up::before {
+//     content: '';
+//     position: absolute;
+//     width: 10px;
+//     height: 10px;
+//     border-top: 3px solid #06d56c;
+//     border-left: 3px solid#06d56c;
+//     transform: rotate(45deg);
+//     top: 4px;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     margin: auto;
+//     }
+
+/***
+*
+* ./BUTTON UP
+*
+***/

@@ -1,0 +1,37 @@
+            //Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,800');
+
+
+            // Fontawesome
+@import "../libs/fontawesome/fontawesome-all.min";
+
+            // Normalize
+@import "../libs/normalize/normalize";
+
+            // Slick slider style
+// @import "../libs/slick-scss/slick.scss";
+// @import "../libs/slick-scss/slick-theme.scss";
+
+
+            //  *** COMPONENTS ***
+
+// Adjustment  mixin variables
+@import "misc/_variables.scss";
+@import "misc/_mixin.scss";
+@import "misc/_adjustment.scss";
+
+//butons
+@import "components/_buttons.scss";
+@import "components/_inputs.scss";
+@import "components/_modalwindow.scss";
+
+            //  *** LAYOUTS ***
+@import "layouts/_header.scss";
+@import "layouts/_project-slider.scss";
+@import "layouts/_blog.scss";
+@import "layouts/_services.scss";
+@import "layouts/_footer.scss";
+
+
+
+
