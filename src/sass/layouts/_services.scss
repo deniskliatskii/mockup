@@ -1,5 +1,6 @@
 .services-section {
-    margin-bottom: 106px;
+    margin-bottom: 76px;
+    padding-top: 30px;
 }
 
 .services-list {
@@ -8,16 +9,22 @@
     margin: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .services-item {
     width: 270px;
     text-align: center;
     padding: 47px 17px 0;
-    background-color: #f8f8f8;
-    border-radius: 5px;
+    background-color: $tabsContentColor;
+    border-radius: 6px;
+    border-bottom: 4px solid $shadowColor;
     display: flex;
     flex-direction: column;
+    transition: background-color .1s ease-in-out;
+    &:hover {
+        background-color: $lightsFontColor;
+    }
 }
 
 .services-icon {
@@ -54,15 +61,16 @@
     position: relative;
     bottom: -27px;
     margin-top: auto;
-
+    border-bottom: 4px solid $shadowBlueColor;
+    transition: background-color .1s ease-in-out,
+                border .1s ease-in-out;
+    
     &:hover {
         background-color: $accentColor;
+        border-bottom: 4px solid $shadowAccentColor;
     }
 }
 
-.services-link:hover.services-item {
-    background-color: #300;
-}
-.services-link:hover .services-icon i {
+.services-item:hover .services-icon {
     color: $accentColor;
 }

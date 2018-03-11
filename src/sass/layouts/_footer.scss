@@ -1,5 +1,136 @@
 /*** Top footer ***/
 
+/*** Site info ***/
+.main-footer {
+    background: url(../img/ruler-footer.png) center top no-repeat,$topFooterColor;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 45px 40px 48px 0;
+}
+
+.cite-info {
+    flex-basis: 30%;
+}
+
+.info-descr {
+    margin: 32px 0;
+    color: $lightsFontColor;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23.4px;
+}
+
+.cite-info .phone-number, .email  {
+    color: $lightsFontColor;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.phone-number {
+    margin-bottom: 15px;
+}
+
+.cite-info p span {
+    color: $lightsFontColor;
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+
+/*** Navigation footer ***/
+
+.nav-footer__title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: .5;
+    margin-bottom: 31px;
+}
+.nav-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 28%;
+    flex-wrap: wrap;
+}
+
+.nav-footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.nav-footer__item {
+    padding-left: 40px;
+    background: url(../img/icon/arrow_right.svg) 15px center no-repeat;
+}
+
+.nav-footer__link {
+    color: $lightsFontColor;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23.4px;
+}
+
+/*** Blog preview ***/
+.blog-preview {
+    flex-basis: 30%;
+}
+
+.blog-preview-title {
+    color: $lightsFontColor;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 24px;
+     & span {
+         font-style: italic;
+         font-weight: normal;
+     }
+}
+
+.prewiew-list__img {
+    background: url(../img/blog-prew.png) center center no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin-right: 18px;
+}
+.preview-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.preview-item {
+    display: flex;
+    margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+}
+
+.preview-text {
+    color: $lightsFontColor;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+}
+.post-prewiew time {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    opacity: .5;
+}
+
 
 /*** Bottom footer ***/
 

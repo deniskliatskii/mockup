@@ -37,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     width: 770px;
-    
+    position: relative;
 }
 
 .nav-list {
@@ -48,7 +48,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 
 
 .nav-link {
@@ -65,15 +64,22 @@
     border-radius: 5px;
 }
 
-.search {
+.search-form {
     // display: none;
     position: absolute;
     right: 0;
-    bottom: -19px;
+    bottom: -60px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: -17px;
+        right: 7px;
+        border: 10px solid transparent;
+        border-bottom: 10px solid $accentColor;
+    }
 }
 
-.search-form {
+.search-btn {
     margin-left: 47px;
-    position: relative;
 }
 

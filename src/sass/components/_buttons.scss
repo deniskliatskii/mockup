@@ -7,29 +7,54 @@
     height: 60px;
     background-color: $accentColor;
     position: absolute;
+    border-radius: 0 5px 5px 0;
+    border-bottom: 3px solid $shadowAccentColor;
+    cursor: pointer;
     
     &::before {
         content: '';
         position: absolute;
-        width: 15px;
-        height: 15px;
+        width: 11px;
+        height: 11px;
         border-bottom: 3px solid #fff;
         border-left: 3px solid #fff;
         transform: rotate(45deg);
-        top: 18px; 
+        top: 21px; 
         left: 15px;
     }
     &::after {
         content: '';
         position: absolute;
-        width: 15px;
-        height: 15px;
+        width: 11px;
+        height: 11px;
         border-bottom: 3px solid #fff;
         border-left: 3px solid #fff;
         transform: rotate(45deg);
-        top: 18px; 
-        left: 25px;
+        top: 21px; 
+        left: 23px;
     }
+}
+
+.left-arrow__min {
+    width: 40px;
+    height: 40px;
+    background-color: $accentColor;
+    position: absolute;
+    border-radius: 0 5px 5px 0;
+    border-bottom: 3px solid $shadowAccentColor;
+    cursor: pointer;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 11px;
+            height: 11px;
+            border-bottom: 3px solid #fff;
+            border-left: 3px solid #fff;
+            transform: rotate(45deg);
+            top: 11px; 
+            left: 15px;
+        }
+    
 }
 
 .right-arrow {
@@ -38,31 +63,54 @@
     background-color: $accentColor;
     position: absolute;
     right: 0;
-    
+    border-radius: 5px 0 0 5px;
+    border-bottom: 3px solid $shadowAccentColor;
+    cursor: pointer;
     &::before {
         content: '';
         position: absolute;
-        width: 15px;
-        height: 15px;
+        width: 11px;
+        height: 11px;
         border-bottom: 3px solid #fff;
         border-right: 3px solid #fff;
         transform: rotate(-45deg);
-        top: 18px; 
+        top: 21px; 
         right: 15px;
     }
     &::after {
         content: '';
         position: absolute;
-        width: 15px;
-        height: 15px;
+        width: 11px;
+        height: 11px;
         border-bottom: 3px solid #fff;
         border-right: 3px solid #fff;
         transform: rotate(-45deg);
-        top: 18px; 
-        right: 25px;
+        top: 21px; 
+        right: 23px;
     }
 }
 
+.right-arrow__min {
+    width: 40px;
+    height: 40px;
+    background-color: $accentColor;
+    position: absolute;
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    border-bottom: 3px solid $shadowAccentColor;
+    cursor: pointer;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        border-bottom: 3px solid #fff;
+        border-right: 3px solid #fff;
+        transform: rotate(-45deg);
+        top: 11px; 
+        right: 15px;
+    }
+}
 
 .search-btn {
     border: none;

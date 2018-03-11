@@ -1,52 +1,44 @@
+.search {
+    background: none;
+    border: none;
+    border: 5px solid $accentColor;
+    border-radius: 5px;
+    background: $lightsFontColor;
+    padding: 10px 9px;
+}
+
+
 // *** placeholder styles ***
 
+.search::-webkit-input-placeholder {           /* Google Chrome*/
+   font-family: 'Open Sans', sans-serif;
+    color: $headingFontsColor;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.search::-moz-placeholder {                   /* Firefox 19+ */
+  font-family: 'Open Sans', sans-serif;
+    color: $headingFontsColor;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 
-// /*.class input*/::-webkit-input-placeholder {           /* Google Chrome*/
-//     font-family: 'Popins', sans-serif;
-//     color: #b8b8b8;
-//     font-size: 1rem;
-//     font-weight: 400;
-//     line-height: 2rem;
-//     @media screen and (max-width: 596px) {
-//         font-size: 0.8rem;
-//     }
-// }
-
-// /*.class input*/::-moz-placeholder {                   /* Firefox 19+ */
-//     font-family: 'Popins', sans-serif;
-//     color: #b8b8b8;
-//     font-size: 1rem;
-//     font-weight: 400;
-//     line-height: 2rem;
-//     @media screen and (max-width: 596px) {
-//         font-size: 0.8rem;
-//     }
-// }
+.search:-moz-placeholder {                    /* Firefox 18- */
+    font-family: 'Open Sans', sans-serif;
+    color: $headingFontsColor;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 
-// /*.class input*/:-moz-placeholder {                    /* Firefox 18- */
-//     font-family: 'Popins', sans-serif;
-//     color: #b8b8b8;
-//     font-size: 1rem;
-//     font-weight: 400;
-//     line-height: 2rem;
-//     @media screen and (max-width: 596px) {
-//         font-size: 0.8rem;
-//     }
-// }
-
-
-// /*.class input*/:-ms-input-placeholder {               /* IE */
-//     font-family: 'Popins', sans-serif;
-//     color: #b8b8b8;
-//     font-size: 1rem;
-//     font-weight: 400;
-//     line-height: 2rem;
-//     @media screen and (max-width: 596px) {
-//         font-size: 0.8rem;
-//     }
-// }
+.search:-ms-input-placeholder {               /* IE */
+    font-family: 'Open Sans', sans-serif;
+    color: $headingFontsColor;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 
 

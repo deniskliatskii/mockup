@@ -23,6 +23,22 @@ body {
     @include container;
 } 
 
+.grid-culums {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+        .right-column {
+           flex-basis: 270px;
+        }
+
+        .left-column {
+            flex-basis: 74%;
+        }
+
+        
+
 a {
     text-decoration: none;
     display: block;

@@ -8,9 +8,8 @@
         <!-- ======================= LIBS CSS STYLE ====================== -->
 
     <link rel="stylesheet" href="css/main-min.css">
-    <!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
-
-    <title>name site</title>
+    
+    <title>ModusVersus</title>
 </head>
 <body>
 
@@ -23,15 +22,15 @@
             <nav class="nav-header">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
                 </ul>
+                <button class="search-btn"></button>
                 <form action="" class="search-form">
-                    <button class="search-btn"></button>
                     <input type="text" name="search" id="search" placeholder="Search the site" class="search">
                 </form>
             </nav>
@@ -87,12 +86,12 @@
         <div class="container">
 
 
-            <div class="blog-section">
+            <div class="blog-section grid-culums" id="blog">
                 
                 <!-- Left column -->
                 
                 <!-- Blog slider -->
-                <div class="shifter blog-shifter">
+                <div class="shifter blog-shifter left-column">
                     <div class="shifter-wrap">
                         <img src="img/blog-slider-bg-1.jpg" alt="Foto slider">
                         <div class="nav-shifter">
@@ -107,54 +106,56 @@
                         <div class="line"></div>
                     </div>
                 </div> <!-- ./Blog slider -->
+
+                <!-- ./Left column -->
             
-                
-                
+                                
                 <!-- Right column -->
                 <aside class="right-column">
                     
                     <!-- Blog slider -->
-                    <div class="shifter aside-shifter">
-                        <div class="shifter-wrap">
+                    <div class="shifter sidebar-shifter">
+                        <div class="shifter-wrap shifter-sidebar__wrap">
                             <img src="img/slider-bg-1.jpg" alt="Foto slider">
-                            <div class="nav-shifter">
-                                <div class="shifter-arrow left-arrow arrow-min"></div>
-                                <div class="shifter-arrow right-arrow arrow-min"></div>
+                            <div class="nav-shifter ">
+                                <div class="shifter-arrow left-arrow__min"></div>
+                                <div class="shifter-arrow right-arrow__min"></div>
                             </div>
                         </div>
                         
                         <div class="pagination min-pagination">
-                            <div class="line min-line"></div>
-                            <div class="line min-line active-line"></div>
-                            <div class="line min-line"></div>
+                            <div class="min-line"></div>
+                            <div class="min-line active-line"></div>
+                            <div class="min-line"></div>
                         </div>
                     </div>
                     <!-- ./Blog slider -->
                     
                 
-                    <!-- ./Left column -->
-                    
+                                        
                     <div class="blog-gallery">
                         <h2 class="gallery-title">SIDEBAR GALLERY</h2>
                         <ul class="gallery-list">
-                            <li class="gallery-item"><img src="img/slider-bg-1.jpg" alt="" class="gallery-content"></li>
-                            <li class="gallery-item"><img src="img/slider-bg-1.jpg" alt="" class="gallery-content"></li>
-                            <li class="gallery-item"><img src="img/slider-bg-1.jpg" alt="" class="gallery-content"></li>
-                            <li class="gallery-item"><img src="img/slider-bg-1.jpg" alt="" class="gallery-content"></li>
-                            <li class="gallery-item"><img src="img/slider-bg-1.jpg" alt="" class="gallery-content"></li>
-                            <li class="gallery-item"><img src="img/slider-bg-1.jpg" alt="" class="gallery-content"></li>
+                            <li class="gallery-item"><img src="img/gallery/gallery-tumb-1.jpg" alt="Gallery foto" class="gallery-content"></li>
+                            <li class="gallery-item"><img src="img/gallery/gallery-tumb-2.jpg" alt="Gallery foto" class="gallery-content"></li>
+                            <li class="gallery-item"><img src="img/gallery/gallery-tumb-3.jpg" alt="Gallery foto" class="gallery-content"></li>
+                            <li class="gallery-item"><img src="img/gallery/gallery-tumb-4.jpg" alt="Gallery foto" class="gallery-content"></li>
+                            <li class="gallery-item"><img src="img/gallery/gallery-tumb-5.jpg" alt="Gallery foto" class="gallery-content"></li>
+                            <li class="gallery-item"><img src="img/gallery/gallery-tumb-6.jpg" alt="Gallery foto" class="gallery-content"></li>
                         </ul>
                     </div>
 
                 </aside> <!-- ./Right column -->
             
-            </div> <!-- ./Left column -->
+            </div> <!-- ./Blog section -->
 
-            <div class="services-section">
+
+            <!-- Services section -->
+            <div class="services-section" id="services">
                 <ul class="services-list">
                     <li class="services-item">
                         <p class="services-icon"><i class="far fa-thumbs-up"></i></p>
-                        <h3 class="services-title">SUSPENDISSE</h3>
+                        <a href="#" class="services-title">SUSPENDISSE</a>
                         <p class="services-descr">
                              Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc.
                         </p>
@@ -162,7 +163,7 @@
                     </li>
                     <li class="services-item">
                         <p class="services-icon"><i class="fas fa-key"></i></p>
-                        <h3 class="services-title">MAECENAS</h3>
+                        <a href="#" class="services-title">MAECENAS</a>
                         <p class="services-descr">
                              Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci,
                              ut commodo.
@@ -171,7 +172,7 @@
                     </li>
                     <li class="services-item">
                         <p class="services-icon"><i class="fab fa-font-awesome-flag"></i></p>
-                        <h3 class="services-title">ALIQUAM</h3>
+                        <a href="#" class="services-title">ALIQUAM</a>
                         <p class="services-descr">
                              Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.
                         </p>
@@ -179,14 +180,208 @@
                     </li>
                     <li class="services-item">
                         <p class="services-icon"><i class="fas fa-flask"></i></p>
-                        <h3 class="services-title">HABITASSE</h3>
+                        <a href="#" class="services-title">HABITASSE</a>
                         <p class="services-descr">
                              Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.
                         </p>
                         <a href="#" class="services-link">read more</a>
                     </li>
                 </ul>
-            </div>
+            </div> <!-- ./Services section -->
+
+
+            <!-- About section -->
+            <div class="about-section grid-culums" id="about">
+
+                <div class="left-column">
+
+                    <div class="accordion about-accordion">
+
+                        <div class="accordion-head about-head">Accordion title</div>
+                        <div class="accordion-content about-text">
+                            Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend
+                            libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                        </div>
+
+                        <div class="accordion-head about-head">Accordion title</div>
+                        <div class="accordion-content about-text">
+                            Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend
+                            libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                        </div>
+
+                        <div class="accordion-head about-head">Accordion title</div>
+                        <div class="accordion-content about-text">
+                            Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend
+                            libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                        </div>
+
+                    </div>
+                </div>
+
+                <aside class="right-column">
+                    <div class="accordion about-accordion">
+                    
+                        <div class="accordion-head about-head">Accordion title</div>
+                        <div class="accordion-content about-text">
+                             Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis
+                        </div>
+                    
+                        <div class="accordion-head about-head">Accordion title</div>
+                        <div class="accordion-content about-text">
+                             Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis
+                        </div>
+                    
+                        <div class="accordion-head about-head">Accordion title</div>
+                        <div class="accordion-content about-text">
+                             Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis
+                        </div>
+                    
+                    </div>
+                </aside>
+
+                <!-- <div class="grid-culums"> -->
+                    <div class="left-column">
+                        <div class="about-tabsbox">
+        
+                            <div class="tabs-btn">
+                                <div class="tabs-title about-tabs-title about-head">Tab title</div>
+                                <div class="tabs-title about-tabs-title about-head">Tab title</div>
+                                <div class="tabs-title about-tabs-title about-head">Tab title</div>
+                                <div class="tabs-title about-tabs-title about-head">Tab title</div>
+                            </div>
+        
+                            <div class="tabs-content-wrap">
+    
+                                <div class="tabs-content">
+                                    <p class="tabs-content-descr about-text">
+                                        Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend
+                                        libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                                        Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend
+                                        libero sed neque rhoncus consequat.
+                                    </p>
+                                    <div class="img-tabs"></div>
+                                </div>
+    
+                                <div class="tabs-content">
+                                    <p class="tabs-content-descr about-text">
+                                        Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend
+                                        libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                                        Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend
+                                        libero sed neque rhoncus consequat.
+                                    </p>
+                                    <div class="img-tabs"></div>
+                                </div>
+    
+                                <div class="tabs-content">
+                                    <p class="tabs-content-descr about-text">
+                                        Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend
+                                        libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                                        Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend
+                                        libero sed neque rhoncus consequat.
+                                    </p>
+                                    <div class="img-tabs"></div>
+                                </div>
+    
+                                <div class="tabs-content">
+                                    <p class="tabs-content-descr about-text">
+                                        Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend
+                                        libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                                        Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend
+                                        libero sed neque rhoncus consequat.
+                                    </p>
+                                    <div class="img-tabs"></div>
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                    </div>
+    
+                    <aside class="right-column">
+    
+                        <div class="about-tabsbox">
+                        
+                            <div class="tabs-btn">
+                                <div class="tabs-title about-tabs-title about-head">Tab title</div>
+                                <div class="tabs-title about-tabs-title about-head">Tab title</div>
+                            </div>
+                        
+                            <div class="tabs-content-wrap">
+    
+                                <div class="tabs-content about-text">
+                                    Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend
+                                    libero sed neque rhoncu
+                                </div>
+    
+                                <div class="tabs-content about-text">
+                                    Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend
+                                    libero sed neque rhoncu
+                                </div>
+    
+                            </div>
+                        
+                        </div>
+    
+                    </aside>
+                <!-- </div> -->
+            </div> <!-- ./About section -->
+
+
+            <!-- Portfolio section -->
+            <div class="portfolio-section">
+
+                <ul class="portfolio-list">
+                    <li class="portfolio-item">
+                        <img src="img/foto-1.jpg" alt="" class="portfolio-img">
+                        <div class="portfolio-nav">
+                            <span class="preview"></span>
+                            <a href="#" class="porfolio-link"></a>
+                        </div>
+                        <a href="#" class="portfolio-title">Lorem ipsum</a>
+                    </li>
+                    <li class="portfolio-item">
+                        <img src="img/foto-1.jpg" alt="" class="portfolio-img">
+                        <div class="portfolio-nav">
+                            <span class="preview"></span>
+                            <a href="#" class="porfolio-link"></a>
+                        </div>
+                        <a href="#" class="portfolio-title">Lorem ipsum</a>
+                    </li>
+                    <li class="portfolio-item">
+                        <img src="img/foto-1.jpg" alt="" class="portfolio-img">
+                        <div class="portfolio-nav">
+                            <span class="preview"></span>
+                            <a href="#" class="porfolio-link"></a>
+                        </div>
+                        <a href="#" class="portfolio-title">Lorem ipsum</a>
+                    </li>
+                    <li class="portfolio-item">
+                        <img src="img/foto-1.jpg" alt="" class="portfolio-img">
+                        <div class="portfolio-nav">
+                            <span class="preview"></span>
+                            <a href="#" class="porfolio-link"></a>
+                        </div>
+                        <a href="#" class="portfolio-title">Lorem ipsum</a>
+                    </li>
+                    <li class="portfolio-item">
+                        <img src="img/foto-2.jpg" alt="" class="portfolio-img">
+                        <div class="portfolio-nav">
+                            <span class="preview"></span>
+                            <a href="#" class="porfolio-link"></a>
+                        </div>
+                        <a href="#" class="portfolio-title">Lorem ipsum</a>
+                    </li>
+                    <li class="portfolio-item">
+                        <img src="img/foto-2.jpg" alt="" class="portfolio-img">
+                        <div class="portfolio-nav">
+                            <span class="preview"></span>
+                            <a href="#" class="porfolio-link"></a>
+                        </div>
+                        <a href="#" class="portfolio-title">Lorem ipsum</a>
+                    </li>
+                </ul>
+
+            </div> <!-- ./Portfolio section -->
             
             
         </div>
@@ -197,8 +392,96 @@
             
     <!-- footer -->
     <footer class="main-footer">
+        
+        <div class="container">
+            <div class="top-footer">
 
-        <div class="top-footer">
+
+                <div class="cite-info">
+                    <a href="#" class="logo"><span>modus</span>versus</a>
+                    <p class="info-descr">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+                        Sed dui lorem, adipiscing in adipiscing et, interdum nec .
+                    </p>
+                    <p class="phone-number"><span>Phone:</span>182 2569 5896</p>
+                    <p class="email"><span>e-mail:</span>info@modu.versus</p>
+                </div>
+
+                <!-- Navigation Footer -->
+                <div class="nav-footer">
+                    <div class="left-nav">
+                        <h2 class="nav-footer__title">Company</h2>
+                        <ul class="nav-footer__list">
+                            <li class="nav-footer__item">
+                                <a href="#" class="nav-footer__link">About</a>
+                            </li>
+                            <li class="nav-footer__item">
+                                <a href="#" class="nav-footer__link">FAQ</a>
+                            </li>
+                            <li class="nav-footer__item">
+                                <a href="#" class="nav-footer__link">Contact</a>
+                            </li>
+                            <li class="nav-footer__item">
+                                <a href="#" class="nav-footer__link">Terms</a>
+                            </li>
+                            <li class="nav-footer__item">
+                                <a href="#" class="nav-footer__link">Privacy</a>
+                            </li>
+                            <li class="nav-footer__item">
+                                <a href="#" class="nav-footer__link">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="right-nav">
+                        <h2 class="nav-footer__title">Community</h2>
+                        <ul class="nav-footer__list">
+                            <li class="nav-footer__item">
+                                <a href="#" class="nav-footer__link">Blog</a>
+                            </li>
+                            <li class="nav-footer__item">
+                                <a href="#" class="nav-footer__link">Forum</a>
+                            </li>
+                            <li class="nav-footer__item">
+                                <a href="#" class="nav-footer__link">Support</a>
+                            </li>
+                            <li class="nav-footer__item">
+                                <a href="#" class="nav-footer__link">Newsletter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div> <!-- ./Navigation Footer -->
+
+                <div class="blog-preview">
+                    <p class="blog-preview-title"><span>from the</span> BLOG</p>
+
+                    <ul class="preview-list">
+                        <li class="preview-item">
+                            <img class="prewiew-list__img" src="img/blog-prew.png" alt="">
+                            <div class="post-prewiew">
+                                <p class="preview-text">
+                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                                <time datetime="2013-05-26T19:00">26 May, 2013</time>
+                            </div>
+                        </li>
+                        
+                        <li class="preview-item">
+                            <img class="prewiew-list__img" src="img/blog-prew.png" alt="">
+                            <div class="post-prewiew">
+                                <p class="preview-text">
+                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                                <time datetime="2013-05-26T19:00">26 May, 2013</time>
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+
+            </div>
 
         </div>
 
