@@ -1,6 +1,4 @@
-.active-line {
-    background-color: $accentColor;
-}
+
 
 .left-arrow {
     width: 50px;
@@ -10,6 +8,11 @@
     border-radius: 0 5px 5px 0;
     border-bottom: 3px solid $shadowAccentColor;
     cursor: pointer;
+
+    @media screen and (max-width: 596px) {
+        width: 40px;
+        height: 40px;
+    }
     
     &::before {
         content: '';
@@ -21,6 +24,11 @@
         transform: rotate(45deg);
         top: 21px; 
         left: 15px;
+
+        @media screen and (max-width: 596px) {
+            top: 11px; 
+            left: 15px;
+        }
     }
     &::after {
         content: '';
@@ -32,6 +40,10 @@
         transform: rotate(45deg);
         top: 21px; 
         left: 23px;
+        @media screen and (max-width: 596px) {
+            border-bottom: none;
+            border-left: none;
+        }
     }
 }
 
@@ -66,6 +78,12 @@
     border-radius: 5px 0 0 5px;
     border-bottom: 3px solid $shadowAccentColor;
     cursor: pointer;
+
+     @media screen and (max-width: 596px) {
+        width: 40px;
+        height: 40px;
+    }
+    
     &::before {
         content: '';
         position: absolute;
@@ -76,6 +94,10 @@
         transform: rotate(-45deg);
         top: 21px; 
         right: 15px;
+        @media screen and (max-width: 596px) {
+            top: 11px; 
+            left: 15px;
+        }
     }
     &::after {
         content: '';
@@ -87,6 +109,10 @@
         transform: rotate(-45deg);
         top: 21px; 
         right: 23px;
+        @media screen and (max-width: 596px) {
+            border-bottom: none;
+            border-right: none;
+        }
     }
 }
 
@@ -119,49 +145,52 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+
+
 /***
 *
 * BUTTON UP
 *
 ***/
 
-// .btn-up {
-//   position: fixed;
-//   bottom: -50px;
-//   right: 50px;
-//   width: 50px;
-//   height: 50px;
-//   border-radius: 50%;
-//   background: rgba(44, 48, 57, .9);
-//   z-index: 999;
-//   cursor: pointer;
-//   outline: none;
-//   border: none;
-//   transition: .8s;
-// }
+.btn-up {
+  position: fixed;
+  bottom: -50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(44, 48, 57, .9);
+  z-index: 999;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: .8s;
+}
 
-//     .btn-up__active{
-//     bottom: 50px;
-//     }
+    .btn-up__active{
+    bottom: 50px;
+    }
 
-//     .btn-up:hover{
-//     border: 2px solid #06d56c;
-//     }
+    .btn-up:hover{
+    border: 2px solid #06d56c;
+    }
 
-//     .btn-up::before {
-//     content: '';
-//     position: absolute;
-//     width: 10px;
-//     height: 10px;
-//     border-top: 3px solid #06d56c;
-//     border-left: 3px solid#06d56c;
-//     transform: rotate(45deg);
-//     top: 4px;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     margin: auto;
-//     }
+    .btn-up::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #06d56c;
+    border-left: 3px solid#06d56c;
+    transform: rotate(45deg);
+    top: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    }
 
 /***
 *

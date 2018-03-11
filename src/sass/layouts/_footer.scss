@@ -10,10 +10,21 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 45px 40px 48px 0;
+    @media screen and (max-width: 505px) {
+        padding: 45px 0 48px 0;
+
+    }
 }
 
 .cite-info {
     flex-basis: 30%;
+
+    @media screen and (max-width: 505px) {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        order: 2;
+        text-align: center;
+    }
 }
 
 .info-descr {
@@ -58,6 +69,17 @@
     justify-content: space-between;
     flex-basis: 28%;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 505px) {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1012px) {
+    .nav-footer .left-nav {
+        margin-bottom: 30px;
+    }
+    
 }
 
 .nav-footer__list {
@@ -82,6 +104,14 @@
 /*** Blog preview ***/
 .blog-preview {
     flex-basis: 30%;
+    @media screen and (max-width: 1012px) {
+        flex-basis: 100%;
+        margin-top: 30px;
+    }
+
+        @media screen and (max-width: 505px) {
+            margin-bottom: 40px;
+        }
 }
 
 .blog-preview-title {

@@ -31,10 +31,31 @@ body {
 
         .right-column {
            flex-basis: 270px;
+
+           @media screen and (max-width: 1220px) {
+               flex-basis: 230px;
+           }
+           
+           @media screen and (max-width: 1012px) {
+                flex-basis: 80%;
+                margin: auto
+           }
+           @media screen and (max-width: 596px) {
+               flex-basis: 100%;
+           }
         }
 
         .left-column {
             flex-basis: 74%;
+
+            @media screen and (max-width: 1012px) {
+                flex-basis: 80%;
+                margin: auto
+           }
+
+            @media screen and (max-width: 596px) {
+               flex-basis: 100%;
+           }
         }
 
         
