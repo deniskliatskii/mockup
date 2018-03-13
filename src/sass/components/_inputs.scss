@@ -1,3 +1,23 @@
+.search-form {
+    display: none;
+}
+
+.search-btn {
+    padding: 10px 10px 9px 10px;
+    outline: none;
+    &:hover {
+        background: #62a29e;
+        border-radius: 5px;
+    }
+}
+
+.search-btn__active {
+    padding: 10px 10px 9px 10px;
+    background: $accentColor;
+    border-radius: 5px;
+    
+}
+
 .search {
     background: none;
     border: none;

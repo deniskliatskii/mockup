@@ -45,18 +45,40 @@
 
 /***   Sidebar Shifter   ***/
 
-.sidebar-shifter {
-    margin-bottom: 47px;
-}
+// .sidebar-shifter {
+//     margin-bottom: 47px;
+// }
 
     .shifter-sidebar__wrap {
         margin-bottom: 24px;
         position: relative;
+
+        @media screen and (max-width: 1012px) {
+            width: 50%;
+            margin: auto;
+        }
+
+         @media screen and (max-width: 596px) {
+              width: 100%;
+         }
     }
 
     .shifter-sidebar__img {
         border-radius: 5px;
         border-bottom: 4px solid $shadowColor;
+        display: none;
+
+        @media screen and (max-width: 1012px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 596px) {
+              width: 100%;
+         }
+    }
+
+    .shifter-sidebar__img.active-slide {
+        display: block;
     }
 
         .min-line {
@@ -84,6 +106,10 @@
 .gallery-item img {
     border-radius: 5px;
     border-bottom: 3px solid $shadowColor;
+}
+
+.min-pagination {
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1012px) {

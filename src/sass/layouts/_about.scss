@@ -61,11 +61,16 @@
     font-weight: 900;
     line-height: 19.2px;
     text-transform: uppercase;
-    padding: 17px 26px;
+    padding: 17px 24px;
     background-color: $accentColor;
     border-radius: 5px 5px 0 0;
     margin-left: 10px;
     cursor: pointer;
+
+    @media screen and (max-width: 1220px) {
+       padding: 17px 15px;
+       
+    }
 
     @media screen and (max-width: 596px) {
        font-weight: 600; 
@@ -80,11 +85,13 @@
     }
 }
 
-@media screen and (max-width: 596px) {
+@media screen and (max-width: 1012px) {
     .main-tabs {
         margin-bottom: 30px;
     }
 }
+
+
 .about-tabs-title:first-child {
     margin-left: 0;
 }

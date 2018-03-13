@@ -5,53 +5,53 @@
     background: url(../img/ruler-footer.png) center top no-repeat,$topFooterColor;
 }
 
-.top-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 45px 40px 48px 0;
-    @media screen and (max-width: 505px) {
-        padding: 45px 0 48px 0;
+    .top-footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 45px 40px 48px 0;
+        @media screen and (max-width: 505px) {
+            padding: 45px 0 48px 0;
 
+        }
     }
-}
 
-.cite-info {
-    flex-basis: 30%;
+    .cite-info {
+        flex-basis: 30%;
 
-    @media screen and (max-width: 505px) {
-        flex-basis: 100%;
-        margin-bottom: 20px;
-        order: 2;
-        text-align: center;
+        @media screen and (max-width: 505px) {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+            order: 2;
+            text-align: center;
+        }
     }
-}
 
-.info-descr {
-    margin: 32px 0;
-    color: $lightsFontColor;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 23.4px;
-}
+        .info-descr {
+            margin: 32px 0;
+            color: $lightsFontColor;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 23.4px;
+        }
 
-.cite-info .phone-number, .email  {
-    color: $lightsFontColor;
-    font-size: 20px;
-    font-weight: 600;
-    font-style: italic;
-}
+        .cite-info .phone-number, .email  {
+            color: $lightsFontColor;
+            font-size: 20px;
+            font-weight: 600;
+            font-style: italic;
+        }
 
-.phone-number {
-    margin-bottom: 15px;
-}
+        .phone-number {
+            margin-bottom: 15px;
+        }
 
-.cite-info p span {
-    color: $lightsFontColor;
-    font-size: 13px;
-    font-weight: 400;
-    margin-right: 20px;
-}
+        .cite-info p span {
+            color: $lightsFontColor;
+            font-size: 13px;
+            font-weight: 400;
+            margin-right: 20px;
+        }
 
 
 /*** Navigation footer ***/
@@ -99,6 +99,10 @@
     font-size: 13px;
     font-weight: 400;
     line-height: 23.4px;
+    transition: color .1s ease-in-out;
+        &:hover {
+            color: $headingFontsColor;
+        }
 }
 
 /*** Blog preview ***/
@@ -192,28 +196,28 @@
 }
 
 .social-items .rss {
-    background: url(../img/icon/rss.svg) center center no-repeat;
+    background: url(../img/icon/rss.png) center center no-repeat;
     width: 100%;
     height: 100%;
     
 }
 
 .social-items .facebook {
-    background: url(../img/icon/facebook.svg) center center no-repeat;
+    background: url(../img/icon/facebook.png) center center no-repeat;
     width: 100%;
     height: 100%;
     
 }
 
 .social-items .google-plus {
-    background: url(../img/icon/google-plus.svg) center center no-repeat;
+    background: url(../img/icon/g-plus.png) center center no-repeat;
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
 .social-items .tweeter {
-    background: url(../img/icon/twitter.svg) center center no-repeat;
+    background: url(../img/icon/twetter.png) center center no-repeat;
     width: 100%;
     height: 100%;
 }

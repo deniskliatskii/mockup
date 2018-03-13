@@ -44,11 +44,22 @@
 .portfolio-item:last-child {
     margin-right: 0;
 
+    @media screen and (max-width: 1220px) {
+        margin: auto;
+    }
     @media screen and (max-width: 1012px) {
         margin: 5px 5px 30px 5px;
+        margin: auto;
     }
     
 }
+
+@media screen and (max-width: 1012px) {
+    .portfolio-item:nth-last-child(2) {
+    margin: auto;
+}
+}
+
 
 .portfolio-item:nth-child(4n) {
     margin-right: 0;
